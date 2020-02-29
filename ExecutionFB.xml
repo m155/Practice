@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name = "AdhocFB">
+
+<listeners>
+<listener class-name="TestNGListenerFB.FBListener"></listener>
+</listeners>
+
+<test name="Regression_v01">
+
+<parameter name="url" value="https://www.facebook.com/"></parameter>
+<parameter name="browser" value="chrome"></parameter>
+
+<classes>
+
+<!--  <class name="FacebookPOM.FuntionalGroup.ExecuteFB"></class> -->
+<class name="FacebookPOM.FuntionalGroup.DataProviderClass"></class>
+
+</classes>
+</test>
+<test name="Regression_v02">
+
+<parameter name="url" value="https://www.facebook.com/"></parameter>
+<parameter name="browser" value="firefox"></parameter>
+
+<classes>
+<!--  <class name="FacebookPOM.FuntionalGroup.ExecuteFB"></class>-->
+<class name="FacebookPOM.FuntionalGroup.DataProviderClass"></class>
+
+</classes>
+</test>
+</suite>
